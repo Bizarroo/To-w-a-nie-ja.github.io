@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="stylesheet" href="styles.css"> 
+
+    <title>Moje Zainteresowania</title> 
+    <link rel="stylesheet" href="Strona - CSS.css" type="text/css" />
+
+</head> 
+
+<body> 
+
+    <header> 
+
+        <h1>Witaj na Mojej Stronie!</h1> 
+
+        <nav> 
+
+            <ul> 
+
+                <li><a href="strona tytułowa.html">Strona Główna</a></li> 
+
+                <li><a href="Zainteresowania 1.html">Manga i Anime</a></li> 
+
+                <li><a href="Zainteresowania 2.html">Koszykówka</a></li> 
+
+                <li><a href="Kontakt do strony z godziną.html">Kontakt</a></li> 
+
+            </ul> 
+
+        </nav> 
+
+    </header> 
+
+  
+
+    <section class="main-content"> 
+
+        <h2>Witaj na mojej stronie poświęconej moim zainteresowaniom!</h2> 
+
+        <p>Tutaj znajdziesz informacje o tym, co mnie fascynuje i dowiesz się o mnie czegoś więcej. Posraram się rozpisać w tym miejscu moge pasję najbadziej jak potrafię, wszystko po to by zarówno ciebie jak i innych zachęcić do tego samego. Kto wie, może za jakiś czas pogadamy o tym na żywo ?. Na razie śledzcie moją stronę. Dziękuję !.</p> 
+
+  
+
+        <div id="currentDateTime"></div> 
+
+  
+
+        <script> 
+
+            // Kod JavaScript dla aktualnej daty i godziny 
+
+            function updateDateTime() { 
+
+                const currentDate = new Date(); 
+
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' }; 
+
+                const formattedDate = currentDate.toLocaleDateString('pl-PL', options); 
+
+                document.getElementById('currentDateTime').innerText = `Aktualna data i godzina: ${formattedDate}`; 
+
+            } 
+
+  
+
+            // Wywołanie funkcji aktualizacji daty i godziny co sekundę 
+
+            setInterval(updateDateTime, 1000); 
+
+  
+
+            // Pierwsze wywołanie funkcji przy załadowaniu strony 
+
+            updateDateTime(); 
+
+        </script> 
+
+        <script> 
+        // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAT6Ex6V3yjUq3xYeU9fx0aO5qqEs3SHwI",
+  authDomain: "to-co-lubie.firebaseapp.com",
+  projectId: "to-co-lubie",
+  storageBucket: "to-co-lubie.appspot.com",
+  messagingSenderId: "900225040661",
+  appId: "1:900225040661:web:b0a6cf08026126846c291c",
+  measurementId: "G-KT1D29NC7M"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+        </script> 
+    </section> 
+
+  
+
+    <footer> 
+
+        <p>&copy; 2023 Moje Zainteresowania. Wszelkie prawa zastrzeżone.</p> 
+
+    </footer> 
+
+</body> 
+
+</html> 
+
+ 
