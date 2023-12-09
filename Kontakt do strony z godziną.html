@@ -1,0 +1,116 @@
+
+
+ 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="stylesheet" href="styles.css"> 
+
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="Strona - CSS.css" type="text/css" />
+
+</head> 
+
+<body> 
+
+    <header> 
+
+        <h1>Kontakt</h1> 
+
+        <nav> 
+
+            <ul> 
+
+                <li><a href="strona tytułowa z godziną.html">Strona Główna</a></li> 
+
+                <li><a href="Zainteresowania 1.html">Manga i Anime</a></li> 
+
+                <li><a href="Zainteresowania 2.html">Koszykówka</a></li> 
+
+                <li><a href="Kontakt do strony z godziną.html">Kontakt</a></li> 
+
+            </ul> 
+
+        </nav> 
+
+    </header> 
+
+  
+
+    <section class="main-content"> 
+
+        <h2>Skontaktuj się ze mną</h2> 
+
+        <p>Jeśli masz pytania lub chciałbyś podzielić się swoimi zainteresowaniami, napisz do mnie!</p> 
+
+        <address> 
+
+            Email: <a href="mailto:twojemail@example.com">kontakt@wp.pl</a> 
+
+        </address> 
+
+         
+
+        <div id="namedayInfo"></div> 
+
+  
+
+        <script> 
+
+            // Kod JavaScript dla informacji o imieninach 
+
+            function checkNameday() { 
+
+                const currentDate = new Date(); 
+
+                const currentDay = currentDate.getDate(); 
+
+                const currentMonth = currentDate.getMonth() + 1; // Miesiące są indeksowane od zera 
+
+  
+
+                // Tutaj można dodać własną logikę do sprawdzenia, kto ma dziś imieniny 
+
+                // W tym przykładzie, jeśli dzień to 15, a miesiąc to 2, informacja o imieninach zostanie wyświetlona 
+
+                if (currentDay === 9 && currentMonth === 12) { 
+
+                    document.getElementById('namedayInfo').innerText = `Dziś mają imieniny: [Aneta, Leokadia, Wiesław]`; 
+
+                } else { 
+
+                    document.getElementById('namedayInfo').innerText = `Dziś nie ma imienin.`; 
+
+                } 
+
+            } 
+
+  
+
+            // Wywołanie funkcji sprawdzającej imieniny przy załadowaniu strony 
+
+            checkNameday(); 
+
+        </script> 
+
+    </section> 
+
+  
+
+    <footer> 
+
+        <p>&copy; 2023 Moje Zainteresowania. Wszelkie prawa zastrzeżone.</p> 
+
+    </footer> 
+
+</body> 
+
+</html> 
